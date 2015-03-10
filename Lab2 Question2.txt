@@ -1,0 +1,11 @@
+Primary Key uniquely identifies each record
+in a database table. 
+
+Candidate key can be any column or combination
+of columns that can qualify as uniqueue key in 
+database. Each candidate key can qualify as a 
+primary key. 
+
+Superkey is a set of attributes of a relation
+variable for which it hold that in all 
+relations assigned to that variable. 
