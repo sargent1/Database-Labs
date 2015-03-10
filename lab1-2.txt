@@ -1,0 +1,13 @@
+Data Models 
+
+The Hierarchical pre-relational data model is
+structured in a way that there is a main data 
+point at the top of the heirarchy that stems
+down to other points within it. Each part of 
+the heirarchy doesn't connect with eachother,
+but stems only from the point previous. Nework
+models are similarily structured, but have 
+interconnected points within the structure. XML
+is a good model for data storage because it
+allows for the data to be queried, expoerted, 
+and serialized into the desired format. 

@@ -1,0 +1,16 @@
+Data vs Information
+
+In an NHL statistics database the
+data stored would be the raw stats
+that the players aquire through their
+games. The information that is developed
+from this data is things such as rankings, 
+per game averages, and provides comparisons 
+for players within the league. The numbers of 
+goals assists and points are not relevant 
+without comparison to other players, and shown
+in contrast within others in the league through
+player statistic rankings. Once the numbers of 
+the data are givin context throughout the NHL, 
+the information is used to make predictions and
+provide insight on player and team matchups. 
