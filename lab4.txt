@@ -1,0 +1,67 @@
+-- lab4
+--1
+select city
+from Customers
+where cid = 'c006'
+--2
+select pid 
+from orders
+where aid in
+(select aid from orders
+where cid in
+(select cid from customers 
+where city = 'Kyoto'))
+order by pid desc
+--3
+select cid
+from customers
+where name in
+(select aid from orders
+where aid != 'a03')
+--4
+select cid
+from customers
+where cid in
+(select pid from orders
+where pid = 'p01')
+--5
+select pid
+from products
+where aid in 
+(select aid from orders
+where pid in
+(select pid from products
+where aid != 'a05'))
+--6
+select name, discount, city
+from customers
+where city in
+(select aid from orders
+where city in
+(select city from orders))
+--7
+select name
+from customers 
+where city = 'Dallas'
+or discount = 8
+--8
+--The check constraint is used to limit the value
+--range that can be placed in a column.
+--It allows values to be limited and better organized. 
+(
+LastName varchar(255) 
+FirstName varchar(255),
+Address varchar(255),
+City varchar(255)
+)
+--these check constraints allow variable
+--charachters to enter different parts of an adress.
+(
+LastName varchar(255) 
+FirstName varchar(255),
+Address char(255),
+City int(255)
+)
+--these contraints wouldn't work because
+--an adress would need numbers in it, and 
+-- a City would need letters in it. 
