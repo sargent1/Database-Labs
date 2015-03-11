@@ -1,4 +1,5 @@
-﻿select ordno, dollars
+﻿--Connor Sargent
+select ordno, dollars
 from orders;
 
 select name, city
