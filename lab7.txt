@@ -1,0 +1,88 @@
+Connor Sargent
+Lab 7 
+
+Part One
+1) I'd say that it has inconsistant data. 
+
+2) PackageID TagNumber InstallDate SoftwareCostUSD
+   AC01      32808     09-13-2005  754.95
+   DB32      32808     12-03-2005  380.00
+   DB32      37691     06-15-2005  380.00
+   DB33      57772     05-27-2005  412.77
+   WP08      32808     01-12-2006  185.00
+   WP08      37691     06-15-2005  227.50
+   WP08      57222     05-27-2005  170.24
+   WP09      59836     10-30-2005  35.00
+   WP09      77740     05-27-2005  35.00
+
+3)The primary key is PackageID
+
+Part Two
+
+4) PackageID   TagNumber    InstallDate SoftwareCostUSD
+   AC01 Zork   32808 IBM    09-13-2005  754.95
+   DB32 Portal 32808 Apple  12-03-2005  380.00
+   DB32 Portal 37691 Dell   06-15-2005  380.00
+   DB33 Zork   57772 Dell   05-27-2005  412.77
+   WP08 Zork   32808 Apple  01-12-2006  185.00
+   WP08 Portal 37691 Apple  06-15-2005  227.50
+   WP08 Zork   57222 IBM    05-27-2005  170.24
+   WP09 Portal 59836 IBM    10-30-2005  35.00
+   WP09 Portal 77740 Dell   05-27-2005  35.00
+
+5)The functional dependencies in this table include
+The PackageID and TagNumber. This is because the
+package name is dependant on the ID and the computer
+model is dependant on the TagNumber. 
+
+6) This new table is not in third normal form because
+it has cases of multiple dependancy, and third normal
+form can not have any multiple dependancies. 
+
+Part 3
+
+   PackageID TagNumber InstallDate 
+   AC01      32808     09-13-2005  
+   DB32      32808     12-03-2005  
+   DB32      37691     06-15-2005  
+   DB33      57772     05-27-2005  
+   WP08      32808     01-12-2006  
+   WP08      37691     06-15-2005  
+   WP08      57222     05-27-2005  
+   WP09      59836     10-30-2005  
+   WP09      77740     05-27-2005  
+
+   PackageID TagNumber SoftwareCostUSD
+   AC01      32808      754.95
+   DB32      32808      380.00
+   DB32      37691      380.00
+   DB33      57772      412.77
+   WP08      32808      185.00
+   WP08      37691      227.50
+   WP08      57222      170.24
+   WP09      59836      35.00
+   WP09      77740     035.00
+
+7) The Primary keys in each table are PackageID
+and TagNumber.  
+
+8) The Functional dependency in the first table
+is that InstallDate depends on the TagNumber
+and TagNumber depends on the PackageID. In the 
+second table SoftwareCostUSD depends on TagNumber
+and TagNumber depends on PackageID. 
+
+9) These new tables are in third normal form because
+Each column is dependant on just one other column, 
+and there are no multiple dependancies. 
+
+10) 
+
+PackageID -> TagNumber -> InstallDate
+                       -> SoftwareCostUSD
+
+
+
+
+
+
