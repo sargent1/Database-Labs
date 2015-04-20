@@ -1,0 +1,21 @@
+Connor Sargent
+Lab 9 
+
+1) 
+Engineer:pid -> degree, favoriteGame
+Astromaut: pid -> yearsExperience, golfHandicap, spouseName
+FlightControlOperator: pid -> chairPreference, favoriteDrink, hangoverCure
+People: pid -> firstName, lastName, birthDate
+Crew: None
+Spacecraft: scid -> scName, tailNumber, weightTone, fuelType, crewCapacity
+SpacecraftSystems: None
+System: sysid -> sysName, description, costUSD
+Part: partid -> partName, description, costUSD
+Catalog: None
+Supplier: sid -> supplierName, supplierAddress, paymentTerms
+
+
+3) This database is in 3NF because all the non-prime attributes are 
+determined by the candidate key of each table. Engineer, Astronaut, Flight
+Control Operator, and People have the primary key pid. The other candidate
+kays are scid, sysid, partid, and sid. 
