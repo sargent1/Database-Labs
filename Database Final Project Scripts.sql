@@ -264,7 +264,7 @@ INSERT INTO band(bNum, pid, bandRole)
 CREATE TABLE city
 (
 cid text NOT NULL PRIMARY KEY, 
-cityName charachter(50)
+cityName character(50)
 );
 
 INSERT INTO city(cid, cityName)
