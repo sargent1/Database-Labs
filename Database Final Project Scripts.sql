@@ -37,12 +37,12 @@ CREATE TABLE studio
 );
 
 INSERT INTO studio(sid, studioName, yearEstablished, state, zipcode)
-	VALUES('s01', 'Rise Studios', 2006, 'NY', 98234),
-	      ('s02', 'Ramen Studios', 2006, 'CA', 98234),
-	      ('s03', 'Eagle Studios', 2006, 'TX', 98234),
-	      ('s04', 'Sumerian Studios', 2006, 'IL', 98234),
-	      ('s05', 'Blank Studios', 2006, 'NJ', 98234),
-	      ('s06', 'Equal Vision Studios', 2006, 'PA', 98234);
+	VALUES('s01', 'Rise Studios', 2004, 'NY', 10032),
+	      ('s02', 'Ramen Studios', 2006, 'CA', 67345),
+	      ('s03', 'Eagle Studios', 2005, 'TX', 54334),
+	      ('s04', 'Sumerian Studios', 2002, 'IL', 38235),
+	      ('s05', 'Blank Studios', 2007, 'NJ', 07677),
+	      ('s06', 'Equal Vision Studios', 2003, 'PA', 10934);
 
 --Create people table--	      
 CREATE TABLE people
@@ -118,15 +118,15 @@ CREATE TABLE producedIn
 
 INSERT INTO producedIn(pnum, sid, aid)
 	VALUES(1, 's01', 'a01'),
-	      (1, 's01', 'a07'),
-	      (1, 's02', 'a04'),
-	      (1, 's02', 'a09'),
-	      (1, 's03', 'a02'),
-	      (1, 's03', 'a08'),
-	      (1, 's04', 'a03'),
-	      (1, 's05', 'a06'),
-	      (1, 's06', 'a05'),
-	      (1, 's06', 'a10');
+	      (2, 's01', 'a07'),
+	      (3, 's02', 'a04'),
+	      (4, 's02', 'a09'),
+	      (5, 's03', 'a02'),
+	      (6, 's03', 'a08'),
+	      (7, 's04', 'a03'),
+	      (8, 's05', 'a06'),
+	      (9, 's06', 'a05'),
+	      (10, 's06', 'a10');
 	      
 
 --Creat table featuredIn--
@@ -342,7 +342,7 @@ CREATE TABLE awardWinner
 
 INSERT INTO awardWinner(awNum, awid, aid)
 	VALUES(1, 'aw01', 'a01'),
-	      (1, 'aw02', 'a02'),
-	      (1, 'aw03', 'a03'),
-	      (1, 'aw04', 'a04'),
-	      (1, 'aw05', 'a05');
+	      (2, 'aw02', 'a02'),
+	      (3, 'aw03', 'a03'),
+	      (4, 'aw04', 'a04'),
+	      (5, 'aw05', 'a05');
